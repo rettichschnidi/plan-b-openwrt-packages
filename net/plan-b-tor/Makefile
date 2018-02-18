@@ -85,7 +85,6 @@ $(call Package/plan-b-tor/Default/description)
 endef
 
 define Package/plan-b-tor/conffiles
-/etc/tor/torrc
 /var/lib/tor/fingerprint
 /var/lib/tor/keys/*
 endef
@@ -123,7 +122,6 @@ define Package/plan-b-tor/install
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/tor.init $(1)/etc/init.d/tor
 	$(INSTALL_DIR) $(1)/etc/tor
-	$(INSTALL_CONF) $(PKG_INSTALL_DIR)/etc/tor/torrc.sample $(1)/etc/tor/torrc
 endef
 
 define Package/plan-b-tor-gencert/install
