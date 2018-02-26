@@ -8,14 +8,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=plan-b-tor
-PKG_VERSION:=0.3.1.9
+PKG_VERSION:=0.3.2.9
 PKG_RELEASE:=1
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/tor-$(PKG_VERSION)
 PKG_SOURCE:=tor-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://dist.torproject.org/ \
 	https://archive.torproject.org/tor-package-archive
-PKG_HASH:=6e1b04f7890e782fd56014a0de5075e4ab29b52a35d8bca1f6b80c93f58f3d26
+PKG_HASH:=435a7b91aa98d8b1a0ac1f60ca30c0ff3665b18a02e570bab5fe27935829160f
 PKG_MAINTAINER:=Reto Schneider <code@reto-schneider.ch>
 PKG_LICENSE_FILES:=LICENSE
 
