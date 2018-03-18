@@ -27,7 +27,7 @@ endef
 define Package/plan-b
 $(call Package/plan-b/Default)
   TITLE:=Metapackage for Plan B
-  DEPENDS:=+plan-b-tor +ca-bundle +ca-certificates +curl
+  DEPENDS:=+plan-b-tor +ca-bundle +ca-certificates +curl +libustream-openssl +iperf3 +kmod-usb-storage +kmod-fs-msdos +kmod-fs-ext4 +block-mount
 endef
 
 $(eval $(call BuildPackage,plan-b))
